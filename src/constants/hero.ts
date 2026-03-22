@@ -5,7 +5,7 @@ export const PROFILE_DATA: HeroProfile = {
   tagline: '사용자 경험을\n설계하는 디자이너',
   birthDate: '1983. 01. 05',
   email: 'need.green.jei@gmail.com',
-  phone: '010-5235-1118',
+  phone: '',
   profileImage: '/images/leeseojeong.jpeg',
   education: [
     { year: '2026.03', content: '원티드 포텐업 AI 기반 FE/BE 협업과정 1기 수료' },
