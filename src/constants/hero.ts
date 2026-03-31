@@ -4,7 +4,7 @@ export const PROFILE_DATA: HeroProfile = {
   name: '이서정',
   tagline: '사용자 경험을\n설계하는 디자이너',
   birthDate: '1983. 01. 05',
-  email: 'need.green.jei@gmail.com',
+  email: 'you.needgrn@gmail.com',
   phone: '',
   profileImage: '/images/leeseojeong.jpeg',
   education: [
