@@ -65,6 +65,8 @@ export default function ProjectDetailModal({
   const images = project?.images?.length ? project.images : (project?.imageUrl ?? []);
   const total = images.length;
 
+  const isVideo = (src: string) => src.toLowerCase().endsWith('.mp4');
+
   const handleViewWebsite = (link: string, isExternal: boolean) => {
     if (isExternal && link) {
       window.open(link, '_blank', 'noopener,noreferrer');
@@ -90,12 +92,21 @@ export default function ProjectDetailModal({
 
             {/* Project Image Carousel */}
             <div className="relative my-4 rounded-xl overflow-hidden bg-muted h-80 md:h-[470px]">
-              <Image
-                src={images[currentIndex]}
-                alt={`${project.title} - ${currentIndex + 1}`}
-                fill
-                className="object-cover"
-              />
+              {isVideo(images[currentIndex]) ? (
+                <video
+                  key={images[currentIndex]}
+                  src={images[currentIndex]}
+                  controls
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <Image
+                  src={images[currentIndex]}
+                  alt={`${project.title} - ${currentIndex + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              )}
 
               {/* Counter */}
               <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-black/50 text-white text-xs font-medium backdrop-blur-sm">

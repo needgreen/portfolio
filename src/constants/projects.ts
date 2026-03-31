@@ -13,12 +13,12 @@ export const PROJECTS: Project[] = [
       '파일 업로드 아키텍처',
     ],
     imageUrl: [
-      '/images/projects/shortudy/shortudy_01.png',
-      '/images/projects/shortudy/shortudy_02.png',
-      '/images/projects/shortudy/shortudy_03.png',
-      '/images/projects/shortudy/shortudy_04.png',
+      '/images/projects/potenup/shortudy_04.mp4',
+      '/images/projects/potenup/shortudy_02.png',
+      '/images/projects/potenup/shortudy_03.png',
     ],
-    link: 'https://github.com/20250915-POTENUP-FE-1/LXP_WeLearn',
+    link: 'https://shortudy.vercel.app/',
+
     isExternal: true,
 
     intro: [
@@ -401,7 +401,7 @@ export const PROJECTS: Project[] = [
     ],
 
     outcome: [
-      '와디즈 올리브 오일 펀딩 1억 2천만 원 달성',
+      '와디즈 올리브 오일 펀딩 2회 진행 1억 2천만 원 달성',
       '프리미엄 식품 카테고리에서 브랜드 인지도 확보',
       '광고 기획을 통한 효율적인 고객 유입 및 구매 전환',
     ],
@@ -590,12 +590,7 @@ export const PROJECTS: Project[] = [
     title: '와디즈 펀딩 18억 원 달성',
     category: '와디즈/크라우드펀딩/기획',
     role: ['펀딩 스토리 기획 및 작성', '콘텐츠 제작', '상품 촬영', '모델 촬영', '이벤트 기획'],
-    imageUrl: [
-      '/images/projects/loqoqo/loqoqo_01.png',
-      '/images/projects/loqoqo/loqoqo_02.png',
-      '/images/projects/loqoqo/loqoqo_03.png',
-      '/images/projects/loqoqo/loqoqo_04.png',
-    ],
+    imageUrl: ['/images/projects/wadiz/genuio_01.png', '/images/projects/wadiz/genuio_02.png'],
     link: 'https://www.wadiz.kr/web/campaign/detail/48033',
     isExternal: true,
 
@@ -645,12 +640,7 @@ export const PROJECTS: Project[] = [
     title: '와디즈 펀딩 2억 원 달성',
     category: '와디즈/크라우드펀딩/기획',
     role: ['펀딩 스토리 기획 및 작성', '콘텐츠 제작', '상품 촬영', '모델 촬영', '이벤트 기획'],
-    imageUrl: [
-      '/images/projects/loqoqo/loqoqo_01.png',
-      '/images/projects/loqoqo/loqoqo_02.png',
-      '/images/projects/loqoqo/loqoqo_03.png',
-      '/images/projects/loqoqo/loqoqo_04.png',
-    ],
+    imageUrl: ['/images/projects/wadiz/genuio_1st_02.png'],
     link: 'https://www.wadiz.kr/web/campaign/detail/61505',
     isExternal: true,
 

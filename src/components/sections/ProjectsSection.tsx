@@ -102,7 +102,7 @@ export default function ProjectsSection() {
                 {/* Image Container */}
                 <div className="relative aspect-[4/3] overflow-hidden mt-0">
                   <Image
-                    src={project.imageUrl[0]}
+                    src={project.imageUrl[0]?.toLowerCase().endsWith('.mp4') ? project.imageUrl[1] : project.imageUrl[0]}
                     alt={project.title}
                     fill
                     className="object-cover transition-transfor415m duration-700 group-hover:scale-105"
