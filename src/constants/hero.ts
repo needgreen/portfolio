@@ -22,24 +22,33 @@ export const PROFILE_DATA: HeroProfile = {
   social: [
     // { name: 'Behance', url: '#' },
     { name: 'Instagram', url: 'https://www.instagram.com/thirsty.sj' },
+    { name: 'Instagram', url: 'https://www.instagram.com/sum.autumn' },
   ],
 };
 
 export const CAREER_DATA: CareerItem[] = [
   {
+    period: '2025. 06 ~ 2025. 09',
+    company: '(주)렉스필',
+    position: '온라인사업부 과장',
+    description: ['바운티풀 홈페이지(카페24) 운영 및 사용자 접근성 개선을 위한 콘텐츠 구조 개편'],
+  },
+  {
     period: '2023. 04 ~ 2024. 08',
     company: '로코티크 주식회사',
     position: '디자인팀 팀장',
     description: [
+      '신규 브랜드 기획 및 운영 총괄, 협업 조율',
       'UI/UX 디자인, Webflow, 퍼블리싱(tailwind, svelte, astro), 콘텐츠 기획 및 제작, 브랜딩(로고, 콘텐츠, 정체성 확립) 기획',
     ],
+    tools: [],
   },
   {
     period: '2018. 06 ~ 2023. 04',
     company: '제누이오 주식회사',
     position: '디자인팀 팀장',
     description: [
-      '공식 홈페이지(WordPress) 관리, 웹기획 및 디자인, UI/UX 디자인, 상품 촬영, 모델 촬영, 콘텐츠 기획 및 제작, 소셜미디어 콘텐츠 관리',
+      '사용자 분석 기반 웹 기획 및 서비스 운영(Wordpress), UI/UX 디자인, 콘텐츠 기획 및 제작, 소셜미디어 콘텐츠 관리,상품 촬영, 모델 촬영,',
       '와디즈 펀딩 콘텐츠 참여, 올리브 오일 수입 및 펀딩 기획, 올리브 오일 론칭, 브랜딩(인쇄물, 리플렛, 쇼룸 인테리어, 패키지 등) 디자인',
     ],
   },
@@ -66,7 +75,7 @@ export const CAREER_DATA: CareerItem[] = [
   {
     period: '2008. 02 ~ 2010. 04',
     company: '이소품',
-    position: '디자인팀 대리',
+    position: '디자인팀 사원',
     description: [
       '자사 쇼핑몰(메이크샵) 웹사이트 관리',
       '종합몰 및 오픈마켓 상품등록 관리 (플레이오토), 상품 사진촬영 및 보정',

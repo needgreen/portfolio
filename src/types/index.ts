@@ -77,6 +77,7 @@ export interface CareerItem {
   company: string;
   position: string;
   description: string[];
+  tools?: string[];
 }
 
 export interface AwardItem {
