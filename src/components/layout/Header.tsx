@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 const navItems = [
-  { label: "Skillset", href: "#skillset" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Photography", href: "#photography" },
-  { label: "Branding", href: "#branding" },
+  { label: 'Skillset', href: '#skillset' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Photography', href: '#photography' },
+  // { label: "Branding", href: "#branding" },
 ];
 
 export default function Header() {
@@ -21,26 +21,24 @@ export default function Header() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isScrolled
-          ? "bg-background/80 backdrop-blur-lg shadow-sm"
-          : "bg-transparent",
-        "border-b border-border"
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
+        isScrolled ? 'bg-background/80 backdrop-blur-lg shadow-sm' : 'bg-transparent',
+        'border-b border-border',
       )}
     >
       <nav className="container-custom">
@@ -50,7 +48,7 @@ export default function Header() {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
+              window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             className="relative group"
           >
@@ -82,9 +80,9 @@ export default function Header() {
               size="sm"
               className="border-primary/30 hover:bg-primary hover:text-primary-foreground hover:border-primary"
               onClick={() => {
-                const footer = document.querySelector("#contact");
+                const footer = document.querySelector('#contact');
                 if (footer) {
-                  footer.scrollIntoView({ behavior: "smooth" });
+                  footer.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
             >
@@ -100,19 +98,15 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         <div
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-            isMobileMenuOpen ? "max-h-80 pb-6" : "max-h-0"
+            'md:hidden overflow-hidden transition-all duration-300 ease-in-out',
+            isMobileMenuOpen ? 'max-h-80 pb-6' : 'max-h-0',
           )}
         >
           <ul className="flex flex-col gap-1 pt-4">
@@ -120,11 +114,11 @@ export default function Header() {
               <li
                 key={item.href}
                 className={cn(
-                  "opacity-0 -translate-x-4 transition-all duration-300",
-                  isMobileMenuOpen && "opacity-100 translate-x-0"
+                  'opacity-0 -translate-x-4 transition-all duration-300',
+                  isMobileMenuOpen && 'opacity-100 translate-x-0',
                 )}
                 style={{
-                  transitionDelay: isMobileMenuOpen ? `${index * 75}ms` : "0ms",
+                  transitionDelay: isMobileMenuOpen ? `${index * 75}ms` : '0ms',
                 }}
               >
                 <button
@@ -137,13 +131,11 @@ export default function Header() {
             ))}
             <li
               className={cn(
-                "opacity-0 -translate-x-4 transition-all duration-300 pt-2",
-                isMobileMenuOpen && "opacity-100 translate-x-0"
+                'opacity-0 -translate-x-4 transition-all duration-300 pt-2',
+                isMobileMenuOpen && 'opacity-100 translate-x-0',
               )}
               style={{
-                transitionDelay: isMobileMenuOpen
-                  ? `${navItems.length * 75}ms`
-                  : "0ms",
+                transitionDelay: isMobileMenuOpen ? `${navItems.length * 75}ms` : '0ms',
               }}
             >
               <Button
@@ -151,9 +143,9 @@ export default function Header() {
                 className="w-full"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  const footer = document.querySelector("#contact");
+                  const footer = document.querySelector('#contact');
                   if (footer) {
-                    footer.scrollIntoView({ behavior: "smooth" });
+                    footer.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
               >

@@ -38,7 +38,7 @@ export default function ProjectsSection() {
 
   return (
     <section
-      id="portfolio"
+      id="projects"
       ref={sectionRef}
       className="section-padding relative overflow-hidden bg-muted/30"
     >
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
           >
             <div className="h-px w-12 bg-primary" />
             <span className="text-sm font-medium text-primary uppercase tracking-widest">
-              Portfolio
+              Projects
             </span>
           </div>
 
@@ -102,7 +102,11 @@ export default function ProjectsSection() {
                 {/* Image Container */}
                 <div className="relative aspect-[4/3] overflow-hidden mt-0">
                   <Image
-                    src={project.imageUrl[0]?.toLowerCase().endsWith('.mp4') ? project.imageUrl[1] : project.imageUrl[0]}
+                    src={
+                      project.imageUrl[0]?.toLowerCase().endsWith('.mp4')
+                        ? project.imageUrl[1]
+                        : project.imageUrl[0]
+                    }
                     alt={project.title}
                     fill
                     className="object-cover transition-transfor415m duration-700 group-hover:scale-105"
