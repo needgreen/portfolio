@@ -28,13 +28,15 @@ export const PROFILE_DATA: HeroProfile = {
 
 export const CAREER_DATA: CareerItem[] = [
   {
-    period: '2025. 06 ~ 2025. 09',
+    period: '2025. 06 ~ 2025.09',
+    category: '침구·패브릭',
     company: '(주)렉스필',
     position: '온라인사업부 과장',
     description: ['바운티풀 홈페이지(카페24) 운영 및 사용자 접근성 개선을 위한 콘텐츠 구조 개편'],
   },
   {
     period: '2023. 04 ~ 2024. 08',
+    category: '수입가구·인테리어',
     company: '로코티크 주식회사',
     position: '디자인팀 팀장',
     description: [
@@ -45,6 +47,7 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     period: '2018. 06 ~ 2023. 04',
+    category: '패션·슈즈',
     company: '제누이오 주식회사',
     position: '디자인팀 팀장',
     description: [
@@ -54,6 +57,7 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     period: '2017. 03 ~ 2018. 05',
+    category: '패션·아동복',
     company: '(주)엘투컴퍼니',
     position: '디자인팀 과장',
     description: [
@@ -64,6 +68,7 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     period: '2010. 09 ~ 2016. 10',
+    category: '패션·아동복',
     company: '작은이야기(리틀스토리)',
     position: '디자인팀 대리',
     description: [
@@ -74,6 +79,7 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     period: '2008. 02 ~ 2010. 04',
+    category: '인테리어·소품',
     company: '이소품',
     position: '디자인팀 사원',
     description: [
@@ -84,12 +90,14 @@ export const CAREER_DATA: CareerItem[] = [
   },
   {
     period: '2007. 07 ~ 2007. 10',
+    category: '신문사',
     company: '시대일보',
     position: '편집부 사원',
     description: ['페이지메이커, 신문제작, 편집구성'],
   },
   {
     period: '2005. 02 ~ 2007. 02',
+    category: '반도체·제조',
     company: '페어차일드코리아반도체',
     position: '구매그룹 사원',
     description: ['PO발행 및 사무업무'],

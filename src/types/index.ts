@@ -74,6 +74,7 @@ export interface HeroProfile {
 
 export interface CareerItem {
   period: string;
+  category?: string;
   company: string;
   position: string;
   description: string[];

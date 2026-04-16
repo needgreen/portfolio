@@ -205,6 +205,9 @@ export default function HeroSection() {
                     <div className="flex flex-col sm:gap-4 mb-0">
                       <span className="text-xs text-muted-foreground mb-0 sm:mb-0">
                         {career.period}
+                        {career.category && (
+                          <span className="ml-3 text-xs text-muted-foreground/60">{career.category}</span>
+                        )}
                       </span>
                       <div>
                         <span className="text-sm text-foreground font-semibold">
