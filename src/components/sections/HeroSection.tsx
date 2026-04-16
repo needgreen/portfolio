@@ -206,7 +206,9 @@ export default function HeroSection() {
                       <span className="text-xs text-muted-foreground mb-0 sm:mb-0">
                         {career.period}
                         {career.category && (
-                          <span className="ml-3 text-xs text-muted-foreground/60">{career.category}</span>
+                          <span className="ml-3 text-xs text-muted-foreground/60">
+                            {career.category}
+                          </span>
                         )}
                       </span>
                       <div>
@@ -272,7 +274,7 @@ export default function HeroSection() {
             <div className="mt-8">
               <button
                 onClick={() => {
-                  const el = document.querySelector('#portfolio');
+                  const el = document.querySelector('#projects');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 group"
