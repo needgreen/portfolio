@@ -45,7 +45,7 @@ export default function Footer() {
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 group-hover:bg-primary/20 transition-colors duration-200">
                     <Mail className="w-4 h-4" />
                   </span>
-                  <span>need.green.jei@gmail.com</span>
+                  <span>you.needgrn@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -67,9 +67,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { label: 'Skillset', href: '#skillset' },
-                { label: 'Portfolio', href: '#portfolio' },
+                { label: 'Projects', href: '#projects' },
                 { label: 'Photography', href: '#photography' },
-                { label: 'Branding', href: '#branding' },
+                // { label: 'Branding', href: '#branding' },
               ].map((link) => (
                 <li key={link.href}>
                   <a

@@ -16,8 +16,8 @@ export const PROFILE_DATA: HeroProfile = {
   tools: [
     { name: 'Webflow', level: 6 },
     { name: 'Figma', level: 5 },
-    { name: 'Photoshop', level: 5 },
-    { name: 'Illustrator', level: 5 },
+    { name: 'Photoshop', level: 4 },
+    { name: 'Illustrator', level: 4 },
   ],
   social: [
     // { name: 'Behance', url: '#' },
@@ -72,7 +72,7 @@ export const CAREER_DATA: CareerItem[] = [
     company: '작은이야기(리틀스토리)',
     position: '디자인팀 대리',
     description: [
-      '카다로그(포토북, look book) 디자인 및 제작, 제품 촬영, 자사 쇼핑몰(카페24) 웹사이트 관리, 상세페이지 제작 및 상품 등록/관리, 이벤트 기획 및 편집제작',
+      '카다로그(포토북, 룩북) 디자인 및 제작, 제품 촬영, 자사 쇼핑몰(카페24) 웹사이트 관리, 상세페이지 제작 및 상품 등록/관리, 이벤트 기획 및 편집제작',
       '소셜커머스판매페이지 제작 / 오픈마켓, 소셜커머스 상품등록',
       '거래처 쇼핑몰제작 디자인작업 / 거래처 사이트 유지보수 관리',
     ],
