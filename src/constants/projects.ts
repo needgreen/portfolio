@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
       '/images/projects/potenup/shortudy_02.png',
       '/images/projects/potenup/shortudy_03.png',
     ],
-    link: 'https://shortudy.vercel.app/',
+    link: 'https://github.com/20250915-POTENUP-FE-1/LXP_WeLearn',
 
     isExternal: true,
 

@@ -28,7 +28,7 @@ export default function SkillsetSection() {
   }, []);
 
   return (
-    <section id="skillset" ref={sectionRef} className="section-padding relative overflow-hidden">
+    <section id="skillset" ref={sectionRef} className="section-padding relative overflow-hidden bg-muted/30">
       {/* Background Decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />

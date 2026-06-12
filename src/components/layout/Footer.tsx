@@ -68,6 +68,7 @@ export default function Footer() {
               {[
                 { label: 'Skillset', href: '#skillset' },
                 { label: 'Projects', href: '#projects' },
+                { label: 'Ad Creatives', href: '#ad-creatives' },
                 { label: 'Photography', href: '#photography' },
                 // { label: 'Branding', href: '#branding' },
               ].map((link) => (

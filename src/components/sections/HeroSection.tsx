@@ -183,6 +183,8 @@ export default function HeroSection() {
                     <a
                       key={idx}
                       href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-foreground text-background flex items-center justify-center text-xs font-medium hover:bg-primary transition-colors"
                     >
                       {social.name.charAt(0)}
