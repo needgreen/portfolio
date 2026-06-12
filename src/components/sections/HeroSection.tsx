@@ -44,11 +44,21 @@ export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [expandedCareers, setExpandedCareers] = useState<Set<number>>(new Set());
   const totalSlides = 1;
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const toggleCareer = (idx: number) => {
+    setExpandedCareers((prev) => {
+      const next = new Set(prev);
+      if (next.has(idx)) next.delete(idx);
+      else next.add(idx);
+      return next;
+    });
+  };
 
   const handleProjectClick = (idx: number) => {
     setSelectedProject(PROJECTS[idx] ?? null);
@@ -186,7 +196,7 @@ export default function HeroSection() {
           {/* Column 2: Career  */}
           <div
             className={cn(
-              'lg:col-span-3 p-2 md:p-6 xl:p-10 border-b lg:border-b-0 lg:border-r border-border opacity-0',
+              'lg:col-span-3 p-2 md:p-6 xl:p-8 border-b lg:border-b-0 lg:border-r border-border opacity-0',
               isLoaded && 'animate-fade-in animation-delay-100',
             )}
           >
@@ -215,18 +225,29 @@ export default function HeroSection() {
                         <span className="text-sm text-foreground font-semibold">
                           {career.company}
                         </span>
-                        <span className="text-xs text-muted-foreground ml-2">
+                        <span className="text-sm text-muted-foreground ml-2">
                           {career.position}
                         </span>
                       </div>
                     </div>
-                    <ul className="space-y-1 pl-0 sm:pl- line-clamp-2">
-                      {career.description.map((desc, dIdx) => (
-                        <li key={dIdx} className="text-xs text-muted-foreground leading-relaxed ">
+                    <ul className="space-y-1 pl-0 pt-2">
+                      {(expandedCareers.has(idx)
+                        ? career.description
+                        : career.description.slice(0, 1)
+                      ).map((desc, dIdx) => (
+                        <li key={dIdx} className="text-sm text-muted-foreground leading-relaxed">
                           {desc}
                         </li>
                       ))}
                     </ul>
+                    {career.description.length > 1 && (
+                      <button
+                        onClick={() => toggleCareer(idx)}
+                        className="text-sm text-muted-foreground/60 hover:text-foreground mt-1 transition-colors"
+                      >
+                        {expandedCareers.has(idx) ? '접기' : '...'}
+                      </button>
+                    )}
                   </div>
                 ))}
               </div>
