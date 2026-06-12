@@ -53,7 +53,7 @@ export default function FullscreenViewer({
   return (
     <div
       className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+      onPointerDown={(e) => e.stopPropagation()}
       onKeyDown={onKeyDown}
       tabIndex={0}
     >

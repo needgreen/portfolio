@@ -5,7 +5,7 @@ export const PHOTO_CATEGORIES: PhotoCategory[] = [
     id: 'model',
     title: 'Model Shooting',
     titleKo: '모델촬영',
-    description: '디렉팅/스타일링/리터칭 작업내용',
+    description: '촬영/디렉팅/스타일링/리터칭 작업내용',
     coverImage: '/images/photo/DSC07246.jpg',
     specs: [
       'SONY A9 FE 24-70mm F2.8 GM',
@@ -45,7 +45,7 @@ export const PHOTO_CATEGORIES: PhotoCategory[] = [
     id: 'product',
     title: 'Product Shooting',
     titleKo: '제품촬영',
-    description: '디렉팅/스타일링/리터칭 작업내용',
+    description: '촬영/콘셉트 기획/리터칭 작업내용',
     coverImage: '/images/photo/cafe_menu_01.jpg',
     specs: [
       'SONY A9',

@@ -45,6 +45,16 @@ export interface PhotoCategory {
   images: string[];
 }
 
+export interface AdCreative {
+  id: string;
+  title: string;
+  titleKo: string;
+  description: string;
+  coverImage: string;
+  tags: string[];
+  images: string[];
+}
+
 export interface BrandingProject {
   id: string;
   title: string;
