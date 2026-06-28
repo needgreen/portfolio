@@ -4,7 +4,7 @@ export const AD_CREATIVES: AdCreative[] = [
   {
     id: 'ad-creatives',
     title: 'Ad Creatives',
-    titleKo: '광고 소재 & 기획전 배너',
+    titleKo: '광고 소재 & 기획전 배너 디자인',
     description: 'Meta 광고 소재 및 기획전/프로모션 배너 기획·디자인',
     coverImage: '/images/ads/0610_70off.jpg',
     tags: [
@@ -20,6 +20,7 @@ export const AD_CREATIVES: AdCreative[] = [
       '/images/ads/0623_banner_02.jpg',
       '/images/ads/0616_kakao_01.jpg',
       '/images/ads/0615_kakao_01.jpg',
+      '/images/ads/0615_00.jpg',
       '/images/ads/0610_outofseason_kakao_01.jpg',
       '/images/ads/0610_onsale_banner.jpg',
       '/images/ads/0609_summer_sale_1.jpg',
