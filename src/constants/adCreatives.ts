@@ -18,10 +18,9 @@ export const AD_CREATIVES: AdCreative[] = [
     images: [
       '/images/ads/0623_feed_01.jpg',
       '/images/ads/0623_banner_02.jpg',
-      '/images/ads/0623_banner_02.jpg',
       '/images/ads/0616_kakao_01.jpg',
       '/images/ads/0615_kakao_01.jpg',
-      '/images/ads/0610_outofseason_kakao.jpg',
+      '/images/ads/0610_outofseason_kakao_01.jpg',
       '/images/ads/0610_onsale_banner.jpg',
       '/images/ads/0609_summer_sale_1.jpg',
       '/images/ads/0611_01.jpg',
