@@ -19,6 +19,8 @@ interface GalleryModalProps {
   images: string[];
 }
 
+const isVideo = (src: string) => /\.(mp4|webm|mov)$/i.test(src);
+
 export default function GalleryModal({
   isOpen,
   onClose,
@@ -59,14 +61,27 @@ export default function GalleryModal({
             {images.map((image, index) => (
               <div key={index} className="break-inside-avoid">
                 <div className="relative overflow-hidden rounded-lg bg-muted">
-                  <Image
-                    src={image}
-                    alt={`${title} - ${index + 1}`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-cover"
-                    style={{ display: 'block' }}
-                  />
+                  {isVideo(image) ? (
+                    <video
+                      src={image}
+                      className="w-full h-auto object-cover"
+                      style={{ display: 'block' }}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                    />
+                  ) : (
+                    <Image
+                      src={image}
+                      alt={`${title} - ${index + 1}`}
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-cover"
+                      style={{ display: 'block' }}
+                    />
+                  )}
                 </div>
               </div>
             ))}

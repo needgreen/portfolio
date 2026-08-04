@@ -8,6 +8,8 @@ import GalleryModal from '@/components/ui/GalleryModal';
 import { AdCreative } from '@/types';
 import { AD_CREATIVES } from '@/constants/adCreatives';
 
+const isVideo = (src: string) => /\.(mp4|webm|mov)$/i.test(src);
+
 export default function AdCreativesSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedCreative, setSelectedCreative] = useState<AdCreative | null>(null);
@@ -97,12 +99,23 @@ export default function AdCreativesSection() {
               <div className="relative h-full rounded-2xl border border-border/50 bg-card overflow-hidden transition-all duration-500 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5">
                 {/* Image Container */}
                 <div className="relative aspect-[3/2] overflow-hidden">
-                  <Image
-                    src={creative.coverImage}
-                    alt={creative.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                  {isVideo(creative.coverImage) ? (
+                    <video
+                      src={creative.coverImage}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : (
+                    <Image
+                      src={creative.coverImage}
+                      alt={creative.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
