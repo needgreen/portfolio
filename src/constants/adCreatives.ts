@@ -6,7 +6,7 @@ export const AD_CREATIVES: AdCreative[] = [
     title: 'Ad Creatives',
     titleKo: '광고 소재 & 기획전 배너 디자인',
     description: 'Meta 광고 소재 및 기획전/프로모션 배너 기획·디자인',
-    coverImage: '/images/ads/0722_familysale_03.png',
+    coverImage: '/images/ads/0805_main_couponpack_01.jpg',
     tags: [
       'Meta Business Suite',
       'Kakao 비즈니스',
@@ -16,6 +16,7 @@ export const AD_CREATIVES: AdCreative[] = [
       '프로모션',
     ],
     images: [
+      '/images/ads/0805_main_couponpack_01.jpg',
       '/images/ads/0722_familysale_03.png',
       '/images/ads/0714_banner_popup.jpg',
       '/images/ads/0709_kakao_wide.jpg',
@@ -42,9 +43,14 @@ export const AD_CREATIVES: AdCreative[] = [
     title: 'Instagram & AI Contents',
     titleKo: '인스타그램 & AI 활용 콘텐츠',
     description: '인스타그램 피드·스토리 콘텐츠 디자인과 생성형 AI를 활용한 릴스 영상 제작 사례',
-    coverImage: '/images/instagram/0722_angel_tube.mp4',
+    coverImage: '/images/instagram/0723_angel_icecream.mp4',
     tags: ['Instagram', '생성형 AI', 'Gemini', 'ChatGPT', 'Photoshop', 'Premiere', '콘텐츠 기획'],
     images: [
+      '/images/instagram/0805_reels_couponpack.mp4',
+      '/images/instagram/0729_mov_03.mp4',
+      '/images/instagram/0728_03.jpg',
+      '/images/instagram/0728_04.jpg',
+      '/images/instagram/0728_07.jpg',
       '/images/instagram/0727_1440_1.mp4',
       '/images/instagram/0723_angel_icecream.mp4',
       '/images/instagram/3240x1440.mp4',
